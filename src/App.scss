@@ -83,16 +83,16 @@ body {
 	}
 
 	&:before {
-		width: 95%;
-		bottom: -10px;
-		background-color: rgba(255, 255, 255, 0.4);
+		width: 94%;
+		bottom: -20px;
+		background-color: rgba(255, 255, 255, 16%);
 		z-index: 0;
 	}
 
 	&:after {
-		width: 90%;
-		bottom: -20px;
-		background-color: rgba(255, 255, 255, 0.3);
+		width: 98%;
+		bottom: -10px;
+		background-color: rgba(255, 255, 255, 71%);
 		z-index: 1;
 	}
 
