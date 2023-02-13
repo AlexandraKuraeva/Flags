@@ -151,25 +151,4 @@ export default App;
 //  }
 // ]
 
-//   const [step, setStep] = useState(0);
-
-//   const question = items[step];
-//   const [correct, setCorrecr] = useState(0);
-
-//   const onClickVariant = (index) => {
-//     setStep(step + 1);
-//     if (index === question.correct) {
-//       setCorrecr(correct + 1);
-//       console.log(correct);
-//     }
-//   };
-//   return (
-//     <div className="App">
-//       {/* {step !== items.length ? ( */}
-//       <Game step={step} question={question} onClickVariant={(index) => onClickVariant(index)} />
-//       {/* ) : ( */}
-//       {/* <Result correct={correct} items={items} /> */}
-//       {/* )} */}
-//     </div>
-//   );
 
