@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="App">
       {load ? (
-        'Идет загрузка'
+        'Идет загрузка...'
       ) : !load && step !== items.length ? (
         <Game
           question={question}
