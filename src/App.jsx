@@ -9,7 +9,6 @@ function App() {
   const [step, setStep] = useState(0);
   const [correct, setCorrecr] = useState(0);
 
-  //   let question;
   useEffect(() => {
     fetch(`https://63d805d55dbd72324431efe7.mockapi.io/Quse`)
       .then((res) => res.json())
@@ -22,22 +21,21 @@ function App() {
 
   const onClickVariant = (index) => {
     setStep(step + 1);
-	 if (index === question.correct) {
-     setCorrecr(correct + 1);
-	 
-   }
-	 
+    if (index === question.correct) {
+      setCorrecr(correct + 1);
+    }
   };
-  console.log(correct);
+
   //  if (!load) {
   //   let question = items[step];
   //  }
   let question = items[step];
 
-  
   return (
     <div className="App">
-      {step !== items.length ? (
+      {load ? (
+        'Идет загрузка'
+      ) : !load && step !== items.length ? (
         <Game
           question={question}
           step={step}
@@ -151,4 +149,32 @@ export default App;
 //  }
 // ]
 
+// return (
+//   <div className="App">
+//     {(load) ? "Идет загрузка"
+// 	 : (!load && step !== items.length)?
+// 		 <Game
+//       question={question}
+//       step={step}
+//       items={items}
+//       onClickItem={(index) => onClickVariant(index)}
+//     />
+// 	 :
+// 		 <Result correct={correct} items={items} />
+// 	 }
 
+//   </div>
+// );
+
+// {
+//   step !== items.length ? (
+//     <Game
+//       question={question}
+//       step={step}
+//       items={items}
+//       onClickItem={(index) => onClickVariant(index)}
+//     />
+//   ) : (
+//     <Result correct={correct} items={items} />
+//   );
+// }
