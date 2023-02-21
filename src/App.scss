@@ -9,7 +9,7 @@ body {
 	font-family: "Nunito", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: linear-gradient(0deg, rgba(0,0,0,1) 8%, rgba(92,69,245,1) 62%, rgba(255,255,255,1) 97%);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 8%, rgba(92,69,245,1) 62%, rgba(0,0,0,1) 97%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -106,14 +106,15 @@ body {
 
 		li {
 			padding: 15px;
-			border: 2px solid rgba(56, 47, 131, 0.7);
+			border: 2px solid rgba(181, 181, 184, 0.7);
 			border-radius: 15px;
 			margin-bottom: 10px;
 			cursor: pointer;
-			transition: all 0.1s ease-in-out;
+			transition: all 0.2s ease-in-out;
 
 			&:hover {
-				border: 2px solid rgba(155, 145, 242, 0.978);
+				border: 2px solid rgb(91 8 255);
+				box-shadow: 1px 1px 10px 0px rgb(91 8 255);
 				
 			}
 		}
